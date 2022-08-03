@@ -1,0 +1,46 @@
+:root {
+	/* Theme Colors */
+	--theme-primary: #2c3e2d;
+	--theme-primary-hover: #395a3b;
+	--theme-on-primary: hsl(0, 0%, 100%);
+
+	--theme-bg: #eeeff1;
+	--theme-on-bg: #272f27;
+
+	--theme-surface-1: #e6e4e0;
+	--theme-on-surface-1: #272f27;
+
+	--theme-surface-2: #c3d9c4;
+	--theme-on-surface-2: #000;
+
+
+	/* Theme Shapes */
+	/* Set this to 0 if you want all of the rounded cards, images, etc to be straight edges */
+	--theme-shape-radius: clamp(1rem, 2rem, 3rem);
+	--theme-button-border-radius: 3rem;
+
+	/* Theme Transition */
+	--theme-transition: 0.2s ease-in-out;
+
+	/* Theme Layout */
+	--section-margin: 3rem;
+	--theme-grid-gap: 1rem;
+	--container-max-width: 1440px;
+	--container-max-width-narrow: 960px;
+	--container-padding: 0 1rem;
+
+	--theme-blog-post-header-width: 1200px;
+
+	/* Theme Fonts */
+	--theme-font-family-serif: 'Roboto Serif', Georgia, Cambria, 'Times New Roman',
+		Times, serif;
+	--theme-font-family-sans: 'Lato', -apple-system, BlinkMacSystemFont,
+		sans-serif;
+}
+
+
+
+
+
+
+
