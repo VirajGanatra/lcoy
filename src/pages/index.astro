@@ -50,22 +50,33 @@ const seo = {
 				LCOY UAE is an event designed to bring together youth from around the country to inspire local climate action and create inputs to regional and global conferences of youth. All at the Dubai Youth Hub on the 1st and 2nd October 2022. It's fun, we promise.
 			</p>
 		</div>
-		<Button slot="column-1-cta" href="/company/about.astro">Learn More</Button>
+		<Button slot="column-1-cta" href="/company/about">Learn More</Button>
 		<div slot="column-2-body">
 			<h2>How?</h2>
 			<p>
                 The LCOY will feature presentations, panel discussions and workshops on climate change, and the opportunity to network with local climate activists. There is also a competition across both days surrounding environmental issues we face in the UAE, and how we can solve them.
 			</p>
 		</div>
-		<Button slot="column-2-cta" href="/company/programme.astro">Learn More</Button>
+		<Button slot="column-2-cta" href="/company/programme">Learn More</Button>
 		<div slot="column-3-body">
 			<h2>Who?</h2>
 			<p>
 				LCOY UAE is organised by the youth, for the youth. We are a team of (mostly) students in Dubai, alongside organisations including the Arab Youth Center and the EEG. Click below to find out more about our partners, and how you or your organisation can get involved.
 			</p>
 		</div>
-		<Button slot="column-3-cta" href="/company/about.astro">Learn More</Button>
+		<Button slot="column-3-cta" href="/company/about.html#us">Learn More</Button>
 	</ThreeColumnTextSection>
+
+	<script type="text/javascript">
+        function scroll() {
+            var my_element = document.getElementById("us");
+            my_element.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+              inline: "nearest"
+            });
+        }
+    </script>
 
 	<YouTubeEmbedSection url="https://youtu.be/_DIKyOfJDEY" rounded />
 
