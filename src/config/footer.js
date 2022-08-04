@@ -53,14 +53,7 @@ export const footerLists = [
 				title: 'Presenters',
 				slug: '/company/programme',
 			},
-			{
-				title: 'Sponsors',
-				slug: '/company/contact',
-			},
-			{
-				title: 'Contact',
-				slug: '/company/contact',
-			},
+			
 		],
 	},
 
