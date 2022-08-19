@@ -1,0 +1,37 @@
+---
+import { TextSection } from '@odyssey-theme/components';
+import Layout from '../../layouts/Page.astro';
+import HeroSection from '../../components/sections/heros/HeroSection.astro';
+
+const seo = {
+	title: 'About | LCOY UAE ',
+	description: 'About Page',
+};
+---
+
+<Layout {seo}>
+	<HeroSection>
+		<div slot="text-container">
+			<h1>About the LCOY</h1>
+			<p>
+				LCOY UAE is an event designed to bring together youth from around the country to inspire local climate action and create inputs to regional and global conferences. All at the Dubai Youth Hub on the 1st and 2nd October 2022.
+			</p>
+		</div>
+    <picture slot="image-container">
+      <img
+        src="/assets/images/home/details.png"
+        alt="banner"
+        id="home-hero-image"
+      />
+    </picture>
+	</HeroSection>
+  <TextSection narrow>
+    <h2>What is an LCOY?</h2>
+    <p>
+      A Local Conference of Youth (LCOY) is an event under the umbrella of YOUNGO, the official youth (15-35) constituency of the United Nations Framework Convention on Climate Change (UNFCCC). Its aims are to be a space to boost youth climate action locally and create an input into the international conferences. It represents a national version of the international Conference of Youth (COY), which takes place immediately before the Conference of Parties (COP), the annual UN-Climate Conference.
+    </p>
+    <h2 id="us">Who are we?</h2>
+    <p>
+        We are a group of students and climate activists based in the UAE, working not only to amplify a diverse youth voice throughout the Emirates, but also to educate and to encourage creative, sustainable innovation. The group features a diverse range of young people from across the UAE, including activists, sustainable organisation founders, environmentalists, and youth leaders.
+    </p>
+</Layout>

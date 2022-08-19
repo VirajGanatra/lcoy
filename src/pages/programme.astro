@@ -1,0 +1,72 @@
+---
+import {
+	TextCardSection,
+	Container,
+	Button,
+	FormInput,
+	FormSelect,
+	FormTextarea,
+} from '@odyssey-theme/components';
+import Layout from '../../layouts/Page.astro';
+
+const seo = {
+	title: 'Programme | LCOY UAE ',
+	description: 'Event Outline for LCOY UAE 2022',
+};
+
+const selectOptions = ['Option 1', 'Option 2', 'Option 3'];
+---
+
+<Layout {seo}>
+	<Container>
+		<TextCardSection>
+			<h1>What's happening?</h1>
+			<p>
+				The LCOY will feature presentations, panel discussions and workshops on environmental issues within the UAE, and the opportunity to network with local climate activists. There is also a competition across both days surrounding environmental issues we face in the UAE, and how we can solve them. Prizes are available!
+			</p>
+		</TextCardSection>
+
+		<section class="style-guide__section">
+			<div>
+				<center><img src="/assets/images/LCOY Event Outline.png" alt="LCOY Event Outline" width="800px"/></center>
+			</div>
+		</section>
+
+	</Container>
+</Layout>
+
+<style>
+	.style-guide__section {
+		margin: var(--section-margin) auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.style-guide-forms__container {
+		display: grid;
+		gap: 1rem;
+	}
+	.style-guide-forms__container h3 {
+		margin-bottom: 0.5rem;
+	}
+	.style-guide-color__card {
+		margin-bottom: 1rem;
+		background-color: var(--theme-primary);
+		color: var(--theme-on-primary);
+		padding: 1rem;
+		border-radius: var(--theme-shape-radius);
+	}
+	.style-guide-color__card--surface-1 {
+		background-color: var(--theme-surface-1);
+		color: var(--theme-on-surface-1);
+	}
+	.style-guide-color__card--surface-2 {
+		background-color: var(--theme-surface-2);
+		color: var(--theme-on-surface-2);
+	}
+	@media (max-width: 768px) {
+		.style-guide__section {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+	}
+</style>
