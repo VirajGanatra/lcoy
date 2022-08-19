@@ -12,6 +12,23 @@ const selectOptions = [
 
 ]
 
+const YN = [
+  "Yes",
+  "No"
+]
+
+const industries = [
+    "Technology",
+    "Fashion",
+    "Energy",
+    "Transport",
+    "Arts",
+    "Agriculture",
+    "Healthcare and Medicine",
+    "Construction",
+    "Education"
+]
+
 ---
 
 
@@ -27,10 +44,9 @@ const selectOptions = [
   <FormInput type="text" label="Name" name="entry.1631610685" placeholder="John Doe" id="entry.1631610685" />
   <FormInput type="email" label="Email" name="entry.2138965163" placeholder="hello@example.com" id="entry.2138965163"/>
   <FormInput type="text" label="Age" name="entry.612280982" placeholder="18" id="entry.612280982" />
-  <FormSelect label="What industries are you interested in? Select a primary choice." options={industries} name="entry.1867376963" id="entry
-  .1867376963" />
+  <FormSelect label="What industries are you interested in? Select a primary choice." options={industries} name="entry.1867376963" id="entry.1867376963" />
   <FormSelect label="What industries are you interested in? Select a secondary choice." options={industries} name="entry.1770180553" id="entry.1770180553"/>
-  <FormSelect label="Are you interested in being a panelist for an industry?" options{YN} name="entry.1306852370" id="entry.1306852370"/>
+  <FormSelect label="Are you interested in being a panelist for an industry?" options={YN} name="entry.1306852370" id="entry.1306852370"/>
   <FormInput type="text" label="If yes, please fill out a short (approximately 250-300 words) application on why you would like to."
   name="entry.670002907" id="entry.670002907"/>
   <FormSelect label="How did you hear about us?" options={socials} name="entry.296928995" id="entry.296928995" />
