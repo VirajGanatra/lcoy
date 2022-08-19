@@ -30,15 +30,11 @@ export const footerLists = [
 		items: [
 			{
 				title: 'About',
-				slug: '/company/about',
+				slug: '/about',
 			},
 			{
 				title: 'Programme',
-				slug: '/company/programme',
-			},
-			{
-				title: 'Partners',
-				slug: '/company/programme',
+				slug: '/programme',
 			},
 		],
 	},
@@ -47,13 +43,8 @@ export const footerLists = [
 		items: [
 			{
 				title: 'Register',
-				slug: '/company/register',
+				slug: '/register',
 			},
-			{
-				title: 'Presenters',
-				slug: '/company/programme',
-			},
-			
 		],
 	},
 

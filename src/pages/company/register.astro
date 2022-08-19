@@ -1,7 +1,7 @@
 ---
 import ContactForm from '../../components/forms/Register.astro';
 import Layout from '../../layouts/Page.astro';
-import { Container } from '@odyssey-theme/components';
+import { Container, TextCardSection } from '@odyssey-theme/components';
 
 const seo = {
 	title: 'Register | LCOY UAE',
@@ -11,21 +11,20 @@ const seo = {
 
 <Layout seo={seo}>
 	<Container>
-		<section class="contact-hero__section">
-			<div class="contact-hero__text-section">
+		<TextCardSection>
 				<h1>Registration</h1>
 				<p>
-					Sign up to receive a notification when registrations are open! Once we're open - choose the events you'd like to go to, add your name and email, and you're all set to attend LCOY UAE.
+					Registrations are open! Choose the events you'd like to go to, add your name and email, and you're all set to attend
+					LCOY UAE. If you'd like to get involved in one of our panels, fill out the application in the form and we'll be in touch.
 				</p>
 				<div>
 					<p>
 						 <em
-							><a href="mailto:ladmin@lcoy.ae">admin@lcoy.ae</a
+							><a href="mailto:info@lcoy.ae">info@lcoy.ae</a
 							></em
 						>
 					</p>
 				</div>
-			</div>
 			<div class="col-2__container">
 				<ContactForm />
 			</div>
