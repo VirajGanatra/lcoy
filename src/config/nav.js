@@ -8,7 +8,7 @@ export const nav = [
 		slug: '/about',
 	},
 	{
-		title: 'Programme',
-		slug: '/programme',
+		title: 'Info',
+		slug: '/info',
 	},
 ];

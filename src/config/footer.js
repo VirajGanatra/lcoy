@@ -7,11 +7,11 @@ export const footerSocials = [
 		icon: instagramIcon,
 	},
 	{
-		url: 'https://youtube.com/',
+		url: 'https://youtube.com/channel/UCR6_0Yzi891kvAigtBLQyxA',
 		icon: youtubeIcon,
 	},
 	{
-		url: 'https://twitter.com/littlesticksdev',
+		url: 'https://twitter.com/lcoyuae',
 		icon: twitterIcon,
 	},
 	{
@@ -33,8 +33,8 @@ export const footerLists = [
 				slug: '/about',
 			},
 			{
-				title: 'Programme',
-				slug: '/programme',
+				title: 'Info',
+				slug: '/info',
 			},
 		],
 	},
