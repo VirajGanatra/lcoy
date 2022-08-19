@@ -1,7 +1,7 @@
 ---
 import { Button, FormInput, FormSelect, FormTextarea } from '@odyssey-theme/components';
 
-const selectOptions = [
+const socials = [
   "Instagram",
   "Twitter",
   "Facebook",
@@ -12,14 +12,39 @@ const selectOptions = [
 
 ]
 
+const YN = [
+  "Yes",
+  "No"
+]
+
+const industries = [
+    "Technology",
+    "Fashion",
+    "Energy",
+    "Transport",
+    "Arts",
+    "Agriculture",
+    "Healthcare and Medicine",
+    "Construction",
+    "Education"
+]
+
 ---
 
 
 
-<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScAnQgEXb6_T06uj5wquUHSAGk313Cs4h6wfGmCDPc6Nak7Jg/formResponse?" target="hidden_iframe" onsubmit="javascript: vanish()">
+
+      
+<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeO_w27YjzTt8yQF48sDl3WQI6XpUuEAsUSAfykhn2wamOdDA/formResponse?" target="hidden_iframe" onsubmit="javascript: vanish()">
   <FormInput type="text" label="Name" name="entry.1631610685" placeholder="John Doe" id="entry.1631610685" />
   <FormInput type="email" label="Email" name="entry.2138965163" placeholder="hello@example.com" id="entry.2138965163"/>
-  <FormSelect label="How did you hear about us?" options={selectOptions} name="entry.296928995" id="entry.296928995" />
+  <FormInput type="text" label="Age" name="entry.612280982" placeholder="18" id="entry.612280982" />
+  <FormSelect label="What industries are you interested in? Select a primary choice." options={industries} name="entry.1867376963" id="entry.1867376963" />
+  <FormSelect label="What industries are you interested in? Select a secondary choice." options={industries} name="entry.1770180553" id="entry.1770180553"/>
+  <FormSelect label="Are you interested in being a panelist for an industry?" options={YN} name="entry.1306852370" id="entry.1306852370"/>
+  <FormTextarea label="If yes, please fill out a short (approximately 250-300 words) application on why you would like to."
+  name="entry.670002907" id="entry.670002907"/>
+  <FormSelect label="How did you hear about us?" options={socials} name="entry.296928995" id="entry.296928995" />
   <Button onClick="vanish()">Submit</Button>
 </form>
 
