@@ -1,0 +1,62 @@
+---
+import ContactForm from '../components/forms/Register.astro';
+import Layout from '../layouts/Page.astro';
+import { Container, TextCardSection } from '@odyssey-theme/components';
+
+const seo = {
+	title: 'Register | LCOY UAE',
+	description: 'Registration for LCOY UAE',
+};
+---
+
+<Layout seo={seo}>
+	<Container>
+		<TextCardSection>
+				<h1>Registration</h1>
+				<p>
+					Registrations are open! Choose the events you'd like to go to, add your name and email, and you're all set to attend
+					LCOY UAE. If you'd like to get involved in one of our panels, fill out the application in the form and we'll be in touch
+					.
+				</p>
+				<div>
+					<p>
+						 <em
+							><a href="mailto:info@lcoy.ae">info@lcoy.ae</a
+							></em
+						>
+					</p>
+				</div>
+			<div class="col-2__container">
+				<ContactForm />
+			</div>
+		</section>
+	</Container>
+</Layout>
+
+<style>
+	.contact-hero__section {
+		margin: var(--section-margin) auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		min-height: calc(90vh - var(--navbar-height));
+		gap: 3rem;
+	}
+	.contact-hero__text-section {
+		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: var(--theme-surface-1);
+		border-radius: var(--theme-shape-radius);
+	}
+	.col-2__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	@media (max-width: 768px) {
+		.contact-hero__section {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
