@@ -6,7 +6,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://virajganatra.github.io/',
+  site: 'https://lcoy.ae',
 
   sitemap: true,
   legacy: {
