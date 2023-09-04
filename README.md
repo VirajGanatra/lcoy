@@ -1,67 +1,25 @@
-<p align="center">
-  <img src="assets/readme-banner.png" alt="Odyssey Theme Banner">
-</p>
+## LCOY Website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9c5f2860-7adb-4b7d-91ad-9d13eda8bc46/deploy-status)](https://app.netlify.com/sites/odyssey-theme/deploys)
+You'll find the majority of configuration details on the theme [wiki](https://github.com/littlesticks/odyssey-theme), but for some specific details, see below. The link includes all sorts of configuration and design details, and some of these files are left in this project for you to use.
 
-# Odyssey Theme
+### Pages
 
-This is the repo for the Odyssey Theme, a modern theme/starter for a business or startup's marketing website. It provides landing page examples, a full-featured blog, contact forms, and more. It is also fully theme-able to match your business' branding and style. It even includes a theme switcher component to show how easily the entire style of the site can be changed with only a few lines of CSS.
+The .astro files for the pages are located in the `src/pages` directory. The `index.astro` file is the home page, and the other .astro files are self-explanatory. As the site was developed with the help of the theme, there are folders; these are not active, but feel free to use them for design as you wish.
 
-Some of its features includes but is not limited to:
+You can update the text and images on each of these pages by editing the .astro files. The theme wiki will explain how to do this, but these use standard HTML syntax and you can edit these files as you would any other HTML file. 
 
-- ✅ **A Full Featured Blog with Tagging**
-- ✅ **Fully theme-able styles with for buttons, shapes, backgrounds, surfaces, etc.**
-- ✅ **Responsive mobile-friendly landing pages**
-- ✅ **SEO Best Practices (Open Graph, Canonical URLs, sitemap)**
-- ✅ **Performant Google Fonts Setup**
-- ✅ **Contact Forms Setup for Netlify, Formspree, Formspark, etc.**
-- ✅ **A package of ready-to-use UI components**
+#### Images
+These are currently contained in the `public/assets/images/landing-1` directory. If you want to reduce the amount of work, replace our event outline with yours and use the same file names. If you want to use different images (or add your own on a page), you'll need to update the file names in the .astro files.
 
-## Demo
+### Forms
 
-View a [live demo](https://odyssey-theme.littlesticks.dev/) of the Odyssey Theme.
+To update the registration form, navigate to the `src/pages` directory and edit the [Register.astro](src/pages/register.astro) file. A comment in the file will indicate where to make changes. I would recommend you simply embed the form like this instead of attempting to use the included form component, as it is more complex and will not work well with Google forms.
 
-## Documentation
+### Logo
+You will need to update the Logo in the `src/components/theme-switcher` directory. YOu can either export your logo as an SVG file, or embed it using an `<img>` tag. THis information is also in the theme wiki.
 
-Visit the [Odyssey Theme Documentation](https://odyssey-theme-docs.littlesticks.dev/en/introduction/) to learn more about how to customize the theme and use the components.
+You will also want to update the favicon (the little icon that shows up on the tab when you open a website). You can convert your file to a .ico file using a free online converter, and then replace the favicon.ico file in the `public` directory.
 
-## Installation & Setup
+### Additional Information
 
-### Remote IDEs 
-
-<p>
-  <a href="https://stackblitz.com/github/littlesticksdev/odyssey-theme/tree/main/theme">
-  <img src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" height="36px" />
-  </a>
-</p>
-<p>
-  <a href="https://codesandbox.io/s/github/littlesticksdev/odyssey-theme/tree/main/theme">
-  <img src="https://astro.new/open-in-codesandbox.svg" height="36px" />
-  </a>
-</p>
-<p>
-  <a href="https://gitpod.io/#https://github.com/littlesticksdev/odyssey-theme/tree/main/theme">
-  <img src="https://astro.new/open-in-gitpod.svg" height="36px" />
-  </a>
-</p>
-
-**Or**
-
-### Local Development
-
-```bash
-cd theme
-
-npm install
-
-npm start
-```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/littlesticksdev/odyssey-theme)
-
-Feel free to deploy and host your site on your favorite static hosting service such as Netlify, Firebase Hosting, Vercel, GitHub Pages, etc.
-
-Astro has [an in-depth guide](https://docs.astro.build/en/guides/deploy/) on how to deploy an Astro project to each service.
+You might want to update the main page to include an Instagram feed, or have a separate page for that. You would have to look up how to do this, however; just an idea. As well as this, you could update the YouTube video on the home page to be a video of your own by adding your own link.
