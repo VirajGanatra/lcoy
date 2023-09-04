@@ -1,4 +1,5 @@
 ## LCOY Website
+This project used [Astro](https://astro.build/). THe documentation, installation instructions, and setup is all there. You may want to fork this repo and put it in your own GitHub account, and then clone it to your computer. You can then use the `astro dev` command to run the site locally and make changes.
 
 You'll find the majority of configuration details on the theme [wiki](https://github.com/littlesticks/odyssey-theme), but for some specific details, see below. The link includes all sorts of configuration and design details, and some of these files are left in this project for you to use.
 
