@@ -1,7 +1,7 @@
 ---
 layout: '../../../layouts/Post.astro'
 setup: |
-  import {YouTubeEmbed} from '@odyssey-theme/components'
+  import {YouTubeEmbed} from '@littlesticks/odyssey-theme-components'
 title: Is Remote Work Better For Your Mental Health?
 description: This is a sample blog post for Odyssey
 publishDate: July 4, 2021

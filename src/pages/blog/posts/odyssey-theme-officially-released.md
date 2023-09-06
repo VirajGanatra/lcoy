@@ -1,7 +1,7 @@
 ---
 layout: '../../../layouts/Post.astro'
 setup: |
-  import {Button} from '@odyssey-theme/components'
+  import {Button} from '@littlesticks/odyssey-theme-components'
 title: Odyssey Theme Has Officially Been Released!
 description: This is a sample blog post for Odyssey
 publishDate: May 15, 2022
