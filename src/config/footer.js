@@ -4,23 +4,23 @@ import { twitterIcon, youtubeIcon, instagramIcon, facebookIcon, tiktokIcon } fro
 export const footerSocials = [
 	{
 		url: 'https://instagram.com/lcoyuae',
-		icon: instagramIcon,
+		icon: "mdi:instagram",
 	},
 	{
 		url: 'https://youtube.com/channel/UCR6_0Yzi891kvAigtBLQyxA',
-		icon: youtubeIcon,
+		icon: "mdi:youtube",
 	},
 	{
 		url: 'https://twitter.com/lcoyuae',
-		icon: twitterIcon,
+		icon: "mdi:twitter",
 	},
 	{
 		url: 'https://facebook.com/LCOYUAE/',
-		icon: facebookIcon,
+		icon: "mdi:facebook"
 	},
 	{
 		url: 'https://tiktok.com/@lcoyuae',
-		icon: tiktokIcon,
+		icon: "ic:baseline-tiktok",
 	}
 ]
 
