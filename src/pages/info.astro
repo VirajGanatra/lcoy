@@ -6,6 +6,7 @@ import {
 	FormInput,
 	FormSelect,
 	FormTextarea,
+	TextImageSection,
 } from '@littlesticks/odyssey-theme-components';
 import Layout from '../layouts/Page.astro';
 
@@ -31,7 +32,7 @@ const selectOptions = ['Option 1', 'Option 2', 'Option 3'];
 
 		<section class="style-guide__section">
 			<div>
-				<img src="/assets/images/LCOY Event Outline.png" alt="LCOY Event Outline"/>
+				<img src="/assets/images/participants.png" alt="Participants"/>
 			</div>
 			<div>
                 <h2>Event Outline</h2>
@@ -72,12 +73,19 @@ const selectOptions = ['Option 1', 'Option 2', 'Option 3'];
 		background-color: var(--theme-surface-2);
 		color: var(--theme-on-surface-2);
 	}
-	@media (max-width: 768px) {
+	@media (max-width: 664px) {
 		.style-guide__section {
 			grid-template-columns: 1fr;
 			gap: 2rem;
 			width: 99%;
 			margin: auto;
+			border-radius: var(--theme-shape-radius);
 		}
+	}
+	img {
+		border-radius: var(--theme-shape-radius);
+	}
+	div {
+		padding: 20px;
 	}
 </style>
